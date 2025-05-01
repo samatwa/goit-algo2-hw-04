@@ -5,7 +5,7 @@ class LongestCommonWord(Trie):
     def find_longest_common_word(self, strings) -> str:
         # Перевіряємо, що strings — список рядків
         if not isinstance(strings, list) or not all(isinstance(s, str) for s in strings):
-            raise TypeError("Illegal argument for find_longest_common_word: strings = {strings} must be a list of strings")
+            raise TypeError(f"Illegal argument for find_longest_common_word: strings = {strings} must be a list of strings")
 
         # Якщо список порожній — повертаємо порожній рядок
         if not strings:
